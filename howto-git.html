@@ -19,20 +19,53 @@
 		<pre>git add &lt;file&gt;</pre>
 		&nbsp;&nbsp;&nbsp;&nbsp;คำสั่งเพิ่มไฟล์ หรือโฟลเดอร์เข้าไปยัง Staging
 		Area
+		<pre>git add '*.txt'</pre>
+		&nbsp;&nbsp;&nbsp;&nbsp;เพิ่มครั้งละหลาย ๆ ไฟล์ด้วยการใช้ wildcard -
+		Don't forget the quotes!
 		<pre>git rm --cached &lt;file&gt;</pre>
 		&nbsp;&nbsp;&nbsp;&nbsp;นำไฟล์ออกจาก Staging Area
+		<pre>git diff --staged</pre>
+		&nbsp;&nbsp;&nbsp;&nbsp;ตรวจสอบว่ามีไฟล์ใหม่ add เข้ามามั๊ย
+		<pre>git reset­ &lt;file name&gt;</pre>
+		&nbsp;&nbsp;&nbsp;&nbsp;เป็นคำสั่งสำหรับการยกเลิก staged ของไฟลื
+		ที่เราต้องการออกไป ก่อนที่จะ commit
+
+
 		<pre>git commit -m 'comment message' </pre>
-		&nbsp;&nbsp;&nbsp;&nbsp;ทำการคอมมิทไฟล์ให้เข้าไปเก็บไว้ใน Git
+		&nbsp;&nbsp;&nbsp;&nbsp;ทำการคอมมิทไฟล์ให้เข้า หรือออกจาก local
 		repository
 		<pre>git log และ git log --sum­mary</pre>
 		&nbsp;&nbsp;&nbsp;&nbsp; เป็นคำสั่งเพื่อดูประวัติการ commit ต่างๆ ใน
 		git repository
+		<pre> git remot­e add origin https://github.com/username/repository_name.git</pre>
+		&nbsp;&nbsp;&nbsp;&nbsp; เป็นคำสั่งใช้สำหรับการเพิ่ม remote repository
+		ขึ้นมาชื่อว่า origin เพื่อนำมาใช้งานต่อไป
+		<pre> git push -u origi­n maste­r</pre>
+		&nbsp;&nbsp;&nbsp;&nbsp; เป็นคำสั่งส่งไฟล์และโฟลเดอร์จาก local
+		repository ไปยัง remote repository (github.com)
+
+		<pre> git pull origi­n maste­r</pre>
+		&nbsp;&nbsp;&nbsp;&nbsp;ทำการดึงไฟล์และโฟลเดอร์ต่าง ๆ
+		ที่มีการเปลี่ยนแปลง (จากคนอื่นทำ) ลงมาที่เครื่องของเรา
+
+		<pre>git diff HEAD</pre>
+		&nbsp;&nbsp;&nbsp;&nbsp;Differences -
+		ตรวจสอบว่ามีการเปลี่ยนแปลงอะไรที่แตกต่างจากที่เราคอมมิทไปบ้าง what is
+		different from our last commit
+
+
+
 		<pre>git </pre>
 		&nbsp;&nbsp;&nbsp;&nbsp;
+
 		<pre>git </pre>
-		&nbsp;&nbsp;&nbsp;&nbsp; git rm --cached
-		<file>... git commit -m "This is a message describing what
-		we've changed" git add '*.txt' git log 
+		&nbsp;&nbsp;&nbsp;&nbsp;
+
+		<pre>git </pre>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
 	</blockquote>
 </body>
 </html>
